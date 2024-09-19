@@ -1,0 +1,40 @@
+"C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Scripts\python.exe" "C:\Users\Latitude 5490\PycharmProjects\pythonProject\Projet simity\Mon_projet.py" 
+2024-09-19 15:57:06.068907: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-09-19 15:57:07.409192: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\Projet simity\Mon_projet.py", line 34, in <module>
+    model = load_model(r'C://Users//Latitude 5490//PycharmProjects//pythonProject//Projet simity//facenet_keras.h5', compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\saving\saving_api.py", line 194, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 133, in load_model_from_hdf5
+    model = saving_utils.model_from_config(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 85, in model_from_config
+    return serialization.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\legacy\saving\serialization.py", line 495, in deserialize_keras_object
+    deserialized_obj = cls.from_config(
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\models\model.py", line 525, in from_config
+    return functional_from_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\models\functional.py", line 477, in functional_from_config
+    process_layer(layer_data)
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\models\functional.py", line 457, in process_layer
+    layer = saving_utils.model_from_config(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 85, in model_from_config
+    return serialization.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\legacy\saving\serialization.py", line 495, in deserialize_keras_object
+    deserialized_obj = cls.from_config(
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\layers\core\lambda_layer.py", line 192, in from_config
+    fn = python_utils.func_load(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Latitude 5490\PycharmProjects\pythonProject\.venv\Lib\site-packages\keras\src\utils\python_utils.py", line 83, in func_load
+    code = marshal.loads(raw_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
